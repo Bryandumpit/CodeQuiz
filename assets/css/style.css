@@ -1,25 +1,44 @@
 /*---------------------------Global and Body Styles-----------------------------------*/
 :root{
-    
+    --primary-color-a: #763ac5;
+    --primary-color-b: #4f208b;
+    --secondary-color: #ffffff;
+    --tertiary-color: #a4e1e9;
+
 }
 
 *{
- 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
 /*-----------------------------------------------------------------------------------*/
 
 /*---------------------------Header Styles--------------------------------------------*/
-
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 35px;
+}
 
 /*-----------------------------------------------------------------------------------*/
 
 /*---------------------------Main Styles--------------------------------------------*/
-
+main {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
 
 /*-----------------------------------------------------------------------------------*/
 

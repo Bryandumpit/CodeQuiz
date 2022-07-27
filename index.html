@@ -16,7 +16,7 @@
                 <div><!--set dimensions to div so when <a> and <p> are removed the page doesnt shift-->
                     <a href="">View High Score</a>
                     <p>
-                        Time: <span> </span><!--Time is set and updated by script-->
+                        Time: <span id="time-count"> 0 </span><!--Time is set and updated by script-->
                     </p>
                 </div>    
             </section>
@@ -26,19 +26,29 @@
         <main>
             <!--only in homepage-->
             <div class="title-container">
-                <h1 id="quiz-title">
-                    Coding Quiz Challenge
+                <h1>
+                    Code Quiz!
                 </h1>
+                
             </div>
             <div class="quiz-container">
-                <p id="quiz-instruction">
-                    Try to answer the folowing code-related question within the time limit.<br>
-                    Keep in mind that incorrect answers will penalize you socre/time by ten seconds.
+                <p>
+                    This quiz is to assess your basic knowledge of Javascript.
                 </p>
+                
             </div> 
             <div class="response-container">
-                <button id="quiz-start">Start</button>
-            </div>           
+                <button class="quiz-response" id="start-button" type="button">
+                    Start Quiz!
+                </button>
+                
+            </div> 
+            <div class="report-container">
+                <p>
+                    Good Luck!
+                </p>
+
+            </div>          
         </main>
 
         <footer><!--static element-->

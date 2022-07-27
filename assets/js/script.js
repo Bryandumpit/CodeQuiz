@@ -54,7 +54,7 @@ Highscore page:
    }
    - set setInterval(timeDecrement, 1000);
 - Quiz:
-      var quizMaterial = {
+      e.g. var quizMaterial = {
          firstQuestion = ["Am I Bryan?", "Yes",   "No","Maybe"],
          secondQuestion = ["Am I human?", "yes", "no", "maybe"],
          thirdQuestion = ["Am I male?", "yes", "no", "maybe"],
@@ -65,3 +65,53 @@ Highscore page:
 
       
 */
+//variables
+
+
+//element getters
+var startButtonEl = document.querySelector("#start-button");
+
+
+   
+
+
+// //global timer;
+// var timeCountdown=0
+
+
+
+// //timer function
+// var timer = function(){
+//    timeCountdown = 75;
+   
+//    while (timeCountdown>0){
+//       var countDown = setInterval(timeCountdown -- , 1000);
+//       //get static timer element and replace
+//       console.log(countDown);
+
+//    }
+// }
+var timeDisplay = document.querySelector("#time-count");
+
+//at start of quiz: (1) set timer (timer counting down),
+
+var startQuiz = function() {
+   var timeleft = 75;
+   
+   
+   var timer = setInterval(function(){
+      if (timeleft<=0){
+         clearInterval(timer);
+      }
+      timeDisplay.textContent =  timeleft;
+      timeleft-=1;
+   }, 1000)
+
+
+}
+
+
+
+
+//eventlisteners
+startButtonEl.addEventListener("click", startQuiz);
